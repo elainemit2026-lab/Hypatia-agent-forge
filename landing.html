@@ -2,33 +2,27 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>AI 电商助手 · 让跨境生意更简单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI电商助手 | 抢先体验</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
             background: linear-gradient(135deg, #f5f7ff 0%, #e9eef5 100%);
-            color: #1a2a3a;
-            line-height: 1.5;
             padding: 2rem 1rem;
         }
-
         .container {
             max-width: 1100px;
             margin: 0 auto;
             background: white;
             border-radius: 2rem;
+            padding: 2rem;
             box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
-            overflow: hidden;
-            padding: 2rem 2rem 3rem;
         }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 800;
@@ -38,72 +32,36 @@
             color: transparent;
             margin-bottom: 0.5rem;
         }
-
         .tagline {
             font-size: 1.2rem;
             color: #2c5a7a;
-            margin-bottom: 2rem;
             border-left: 4px solid #3b82f6;
             padding-left: 1rem;
+            margin-bottom: 2rem;
         }
-
         .hero {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
-            margin-bottom: 3rem;
-            align-items: center;
+            margin-bottom: 2rem;
         }
-
         .hero-text {
             flex: 1;
         }
-
         .hero-text p {
-            font-size: 1.1rem;
             margin: 1rem 0;
-            color: #2d3e50;
         }
-
-        .hero-image {
-            flex: 1;
-            background: #eef2ff;
-            border-radius: 1.5rem;
-            padding: 2rem;
-            text-align: center;
-            font-size: 4rem;
-        }
-
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.8rem;
-            margin: 3rem 0;
+            gap: 1.5rem;
+            margin: 2rem 0;
         }
-
         .feature-card {
             background: #f8fafc;
             padding: 1.5rem;
             border-radius: 1.5rem;
-            transition: transform 0.2s;
         }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            background: #ffffff;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-        }
-
-        .feature-icon {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-        }
-
         .signup-form {
             background: #f0f4fe;
             border-radius: 1.5rem;
@@ -111,166 +69,75 @@
             text-align: center;
             margin-top: 2rem;
         }
-
-        .signup-form h2 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
         .form-group {
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem;
             justify-content: center;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
         }
-
-        .form-group input {
-            flex: 1;
-            min-width: 200px;
-            padding: 0.9rem 1rem;
-            border: 1px solid #cbd5e1;
+        input, button {
+            padding: 0.8rem 1.2rem;
             border-radius: 2rem;
+            border: 1px solid #ccc;
             font-size: 1rem;
-            outline: none;
-            transition: 0.2s;
         }
-
-        .form-group input:focus {
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
-        }
-
-        .btn {
+        button {
             background: #1e3c72;
             color: white;
             border: none;
-            padding: 0.9rem 1.8rem;
-            border-radius: 2rem;
-            font-size: 1rem;
-            font-weight: 600;
             cursor: pointer;
-            transition: background 0.2s;
         }
-
-        .btn:hover {
-            background: #0f2b4f;
-        }
-
         footer {
             text-align: center;
-            margin-top: 3rem;
-            font-size: 0.85rem;
-            color: #5a6e7c;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 2rem;
-        }
-
-        @media (max-width: 700px) {
-            .container {
-                padding: 1.5rem;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
 <div class="container">
     <h1>🧠 跨境智售 · AI电商助手</h1>
-    <div class="tagline">告别繁琐运营，让AI帮你抓住每一笔跨境订单</div>
-
+    <div class="tagline">让AI帮你抓住每一笔跨境订单</div>
     <div class="hero">
         <div class="hero-text">
-            <p> <strong>智能商品描述生成</strong> — 一键写出高转化英文文案，多语言适配。</p >
-            <p> <strong>利润计算 & 定价建议</strong> — 输入成本，AI推荐最优售价，利润一目了然。</p >
-            <p>🤖 <strong>7x24小时客服Agent</strong> — 自动回复常见问题，提升复购率。</p >
-            <p> 专为独立站 / 亚马逊 / TikTok卖家打造，内测即将开启。</p >
+            <p> 智能商品描述生成 — 一键写出高转化文案</p >
+            <p> 利润计算 & 定价建议 — 输入成本，AI推荐最优售价</p >
+            <p>🤖 7x24小时客服Agent — 自动回复，提升复购</p >
         </div>
-        <div class="hero-image">
-            🛍️
-        </div>
+        <div class="hero-text" style="text-align:center; font-size:3rem;">🛍️</div>
     </div>
-
     <div class="features">
-        <div class="feature-card">
-            <div class="feature-icon"></div>
-            <h3>30秒生成文案</h3>
-            <p>输入产品关键词，AI自动生成SEO友好的标题和描述。</p >
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🌍</div>
-            <h3>多语言支持</h3>
-            <p>英语、日语、东南亚语言，轻松出海。</p >
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon"></div>
-            <h3>数据驱动决策</h3>
-            <p>竞品分析、趋势预测，让你少走弯路。</p >
-        </div>
+        <div class="feature-card"> 30秒生成文案</div>
+        <div class="feature-card">🌍 多语言支持</div>
+        <div class="feature-card"> 数据驱动决策</div>
     </div>
-
     <div class="signup-form">
-        <h2> 抢先体验 · 早鸟特权</h2>
-        <p>留下邮箱，我们将在上线第一时间通知你，并赠送30天免费高级版。</p >
-        <form id="subscribeForm" action="https://formspree.io/f/你的表单ID" method="POST">
+        <h2> 抢先体验</h2>
+        <p>留下邮箱，上线第一时间通知你，赠送30天免费高级版。</p >
+        <form id="subscribeForm">
             <div class="form-group">
-                <input type="email" name="email" placeholder="你的电子邮箱" required>
-                <button type="submit" class="btn">立即预约 →</button>
+                <input type="email" id="email" placeholder="你的电子邮箱" required>
+                <button type="submit">立即预约 →</button>
             </div>
-            <p style="font-size: 0.8rem; margin-top: 0.8rem;">我们不会发垃圾邮件，可随时退订。</p >
         </form>
-        <div id="formMessage" style="margin-top: 1rem; font-weight: 500;"></div>
+        <div id="message"></div>
     </div>
-
-    <footer>
-         2025 Hapesha AI Forge · 创业第一步 · 让AI为电商创造价值
-    </footer>
+    <footer> 2025 Hapesha AI Forge · 创业第一步</footer>
 </div>
-
 <script>
-    const form = document.getElementById('subscribeForm');
-    const messageDiv = document.getElementById('formMessage');
-
-    form.addEventListener('submit', async function(e) {
-        e.preventDefault();  // 阻止页面刷新
-        
-        const emailInput = form.querySelector('input[name="email"]');
-        const email = emailInput.value.trim();
-
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        let email = document.getElementById('email').value.trim();
+        let msgDiv = document.getElementById('message');
         if (!email) {
-            messageDiv.innerHTML = ' 请填写邮箱地址';
+            msgDiv.innerHTML = ' 请填写邮箱';
             return;
         }
-
-        // 模拟提交（因为你现在还没有配置 formspree，先演示成功提示）
-        // 正式使用时，把 action 改成你的真实 endpoint，并删除下面的模拟代码
-        messageDiv.innerHTML = '✅ 预约成功！感谢支持，我们会尽快联系你。';
-        messageDiv.style.color = '#166534';
-        emailInput.value = '';
-        
-        // 如果以后你配置了 formspree，可以取消注释下面代码并删除上面两行
-        /*
-        try {
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            });
-            if (response.ok) {
-                messageDiv.innerHTML = '✅ 预约成功！感谢支持，我们会尽快联系你。';
-                messageDiv.style.color = '#166534';
-                emailInput.value = '';
-            } else {
-                messageDiv.innerHTML = ' 提交失败，请稍后重试。';
-            }
-        } catch(err) {
-            messageDiv.innerHTML = ' 网络错误，请稍后重试。';
-        }
-        */
+        msgDiv.innerHTML = '✅ 预约成功！感谢支持。';
+        document.getElementById('email').value = '';
     });
 </script>
 </body>
 </html>
-

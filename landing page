@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI电商助手 | 抢先体验</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f7ff 0%, #e9eef5 100%);
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 2rem;
+            padding: 2rem;
+            box-shadow: 0 20px 35px -10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1e3c72, #2b4c7c);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            color: #2c5a7a;
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-text p {
+            margin: 1rem 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+        }
+        .signup-form {
+            background: #f0f4fe;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        input, button {
+            padding: 0.8rem 1.2rem;
+            border-radius: 2rem;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+        button {
+            background: #1e3c72;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🧠 跨境智售 · AI电商助手</h1>
+    <div class="tagline">让AI帮你抓住每一笔跨境订单</div>
+    <div class="hero">
+        <div class="hero-text">
+            <p> 智能商品描述生成 — 一键写出高转化文案</p >
+            <p> 利润计算 & 定价建议 — 输入成本，AI推荐最优售价</p >
+            <p>🤖 7x24小时客服Agent — 自动回复，提升复购</p >
+        </div>
+        <div class="hero-text" style="text-align:center; font-size:3rem;">🛍️</div>
+    </div>
+    <div class="features">
+        <div class="feature-card"> 30秒生成文案</div>
+        <div class="feature-card">🌍 多语言支持</div>
+        <div class="feature-card"> 数据驱动决策</div>
+    </div>
+    <div class="signup-form">
+        <h2> 抢先体验</h2>
+        <p>留下邮箱，上线第一时间通知你，赠送30天免费高级版。</p >
+        <form id="subscribeForm">
+            <div class="form-group">
+                <input type="email" id="email" placeholder="你的电子邮箱" required>
+                <button type="submit">立即预约 →</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <footer> 2025 Hapesha AI Forge · 创业第一步</footer>
+</div>
+<script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        let email = document.getElementById('email').value.trim();
+        let msgDiv = document.getElementById('message');
+        if (!email) {
+            msgDiv.innerHTML = ' 请填写邮箱';
+            return;
+        }
+        msgDiv.innerHTML = '✅ 预约成功！感谢支持。';
+        document.getElementById('email').value = '';
+    });
+</script>
+</body>
+</html>
